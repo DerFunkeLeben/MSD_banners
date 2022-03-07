@@ -1,0 +1,58 @@
+extends ../layout
+block head
+block vars
+  - var href = '%clickurl_1%'
+  - var heart = './img/banner_1/heart.png'
+  - var dog = './img/banner_1/dog.png'
+  
+block content
+  .container.container_banner_1
+
+    a(href=href target='_blank').st_3 
+      img(src=heart).st_3__heart
+      img(src=dog).st_3__dog.dogJump
+      .st_3__clouds
+      .st_3__pink-shape
+      .st_3__title 
+        |поздравляем с
+        br
+        |победой!
+      .st_3__subtitle
+        |но...чтобы любить,
+        br
+        |не нужно сражаться
+      .f.del2
+        .st_3__btn.pulse
+          span
+            |&#10084; 
+          |&ensp; Узнать больше
+
+    .wrapper 
+
+      .st_0(data-state='1')
+        .st_0__title
+          |Защити свою 
+          br
+          |любовь от ВПЧ
+        .st_0__subtitle
+          |все в твоих руках!
+        .st_0__btn.pulse(data-state='1')
+          |Начать игру
+
+      .st_1.f
+        .st_1__time= 10
+        .st_1__caption 
+          |у тебя есть 10 секунд
+        .st_1__title
+          |остерегайся впч!
+          br
+          |кликай, чтобы 
+          br
+          |защитить свою любовь
+
+  
+      include details/details
+      include ../common/SSI/SSI
+
+block scripts
+  script(src='js/banner_1.js')

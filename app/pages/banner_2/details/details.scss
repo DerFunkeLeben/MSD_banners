@@ -1,0 +1,117 @@
+.container_banner_2 {
+  .details {
+    display: none;
+  }
+
+  &.green {
+    .details_green {
+      display: block;
+    }
+
+    .circle {
+      background-color: $green;
+    }
+  }
+
+  &.pink {
+    .details_pink {
+      display: block;
+    }
+
+    .circle {
+      background-color: $pink;
+    }
+  }
+
+  &.blue {
+    .details_blue {
+      display: block;
+    }
+
+    .circle {
+      background-color: $blue;
+    }
+  }
+
+  .virus {
+    position: absolute;
+    width: 58px;
+    height: 57px;
+
+    img {
+      width: 100%;
+    }
+
+    &-1 {
+      top: 0;
+      left: 10px;
+      animation-duration: 20s;
+    }
+
+    &-2 {
+      top: 212px;
+      right: 12px;
+      animation-direction: reverse;
+      animation-duration: 10s;
+      opacity: 0.7;
+
+      img {
+        width: 50%;
+        float: right;
+      }
+    }
+
+    &-3 {
+      top: 282px;
+      left: 10px;
+      animation-direction: reverse;
+      animation-duration: 20s;
+      opacity: 0.5;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .circle {
+    $size-1: 36px;
+    $size-2: 58px;
+    $size-3: 20px;
+
+    position: absolute;
+    border-radius: 50%;
+
+    &-1 {
+      top: 300px;
+      left: 60%;
+      width: $size-1;
+      height: $size-1;
+      animation-direction: reverse;
+      animation-duration: 15s;
+      opacity: 0.3;
+    }
+
+    &-2 {
+      top: 12px;
+      right: 32px;
+      width: $size-2;
+      height: $size-2;
+      animation-duration: 20s;
+      opacity: 0.7;
+    }
+
+    &-3 {
+      top: 202px;
+      left: 20%;
+      width: $size-3;
+      height: $size-3;
+      animation-duration: 12s;
+      opacity: 0.5;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}

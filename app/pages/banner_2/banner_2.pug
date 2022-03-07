@@ -1,0 +1,56 @@
+extends ../layout
+block head
+
+block vars
+  - var href = '%clickurl_1%'
+
+block content
+  .container.container_banner_2
+    .wrapper 
+      .st_0
+        .st_0__title
+          |не знаете, 
+          br
+          |чем заняться
+          br
+          |сегодня?
+        .st_0__window
+          .st_0__clock 
+            include ../../img/banner_2/clock_0.svg
+          .st_0_1.st_0__girl
+          .st_0_2.st_0__girl
+        .st_0__search 
+
+      .st_2.f.dur07
+        .st_2__title
+          |мы подобрали 
+          br
+          |для вас варианты
+        .st_2__subtitle
+          |выберите цвет
+        .st_2__btns
+          .st_2__btn.green(data-state='3' data-theme='green')
+          .st_2__btn.pink(data-state='3' data-theme='pink')
+          .st_2__btn.blue(data-state='3' data-theme='blue')
+
+      a(href=href target='_blank').st_3
+        .st_3__title
+          |сегодня 
+          br
+          |Идеальный
+          br
+          |день, чтобы... 
+        .st_3__subtitle
+          |узнать, что отмечают 
+          br
+          |4 марта во всем мире
+
+        .st_3__btn.pulse
+          |Узнать подробнее
+
+        include details/details  
+            
+      include ../common/SSI/SSI
+
+block scripts
+  script(src='js/banner_2.js')

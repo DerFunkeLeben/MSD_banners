@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  if banner == 'banner_1'
+    include banner_1/banner_1
+
+  else if banner == 'banner_2'
+    include banner_2/banner_2
+    
+  else if banner == 'banner_3'
+    include banner_3/banner_3
+

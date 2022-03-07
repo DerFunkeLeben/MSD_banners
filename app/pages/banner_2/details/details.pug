@@ -1,0 +1,17 @@
+- var path = './img/banner_2/virus_'
+
+mixin details(theme)
+    div(class=`details details_${theme}`)
+        each _,i in Array(3)
+            .virus.levitation(class=`virus-${i+1}`)
+                img(src=`${path + theme}.png`)
+
+        each _,i in Array(3)
+            .circle.levitation(class=`circle-${i+1}`)
+
++details('blue')
++details('pink')
++details('green')
+
+
+

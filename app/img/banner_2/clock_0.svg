@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.476" height="71.476" viewBox="0 0 71.476 71.476">
+    <g id="clock_st_0" transform="translate(-20.295 -17.442)">
+      <circle id="Эллипс_104" data-name="Эллипс 104" cx="25.31" cy="25.31" r="25.31" transform="matrix(0.667, -0.745, 0.745, 0.667, 20.295, 55.178)" fill="#ffe2c4"/>
+      <circle id="Эллипс_105" data-name="Эллипс 105" cx="21.14" cy="21.14" r="21.14" transform="translate(28.363 41.829) rotate(-22.72)" fill="#fff"/>
+      <rect id="clock_hours" data-name="Прямоугольник 492" width="2.04" height="12.3" rx="1.02" transform="matrix(0.821, 0.571, -0.571, 0.821, 55.519, 52.195)" fill="#ffc1ad"/>
+      <rect id="clock_minutes" data-name="Прямоугольник 493" width="2.04" height="18.12" rx="1.02" x="55.01" y="36.2" fill="#ffc1ad"/>
+      <rect id="Прямоугольник_494" data-name="Прямоугольник 494" width="2.85" height="2.85" rx="1.425" transform="translate(54.61 51.61)" fill="#ffb0ad"/>
+    </g>
+  </svg>
+  

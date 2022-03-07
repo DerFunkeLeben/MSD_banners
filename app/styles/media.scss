@@ -1,0 +1,5 @@
+@mixin media_mob {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}

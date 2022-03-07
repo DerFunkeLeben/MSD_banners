@@ -1,0 +1,209 @@
+.container_banner_3 {
+  .trees {
+    $width: 964px / 2;
+    position: absolute;
+    top: 0;
+    width: calc(#{$width});
+    height: 400px;
+    background: url('../img/banner_3/img_trees.png') no-repeat 0 0 / contain;
+
+    &.right {
+      right: calc(50% - #{$width} - 50px);
+    }
+
+    &.left {
+      left: calc(50% - #{$width} - 50px);
+      transform: scaleX(-1);
+    }
+
+    &.st_2 {
+      $width: 741px / 2;
+      left: calc(50% - 220px);
+      width: calc(#{$width});
+      background: url('../img/banner_3/img_tree2.png') no-repeat 0 0 /
+        contain;
+      opacity: 0.4;
+    }
+  }
+
+  &.state_3 {
+    .trees {
+      $width: 741px / 2;
+      position: absolute;
+      top: 0;
+      width: calc(#{$width});
+      height: 400px;
+      background: url('../img/banner_3/img_tree2.png') no-repeat 0 0 /
+        contain;
+
+      &.right {
+        right: calc(50% - #{$width} - 120px);
+      }
+
+      &.left {
+        left: calc(50% - #{$width} - 50px);
+        transform: none;
+      }
+    }
+  }
+
+  .leaves {
+    $width: 405px / 2;
+    position: absolute;
+    top: 197px;
+    width: calc(#{$width});
+    height: 203px;
+
+    &.st_0 {
+      background: url('../img/banner_3/img_leaves.png') no-repeat 0 0 /
+        contain;
+
+      &.right {
+        right: calc(50% - #{$width} - 200px);
+      }
+
+      &.left {
+        left: calc(50% - #{$width} - 200px);
+      }
+    }
+
+    &.st_1 {
+      background: url('../img/banner_3/img_flower.png') no-repeat 0 0 /
+        contain;
+
+      &.right {
+        right: calc(50% - #{$width} - 20px);
+        transform: scaleX(-1);
+      }
+
+      &.left {
+        left: calc(50% - #{$width} - 20px);
+      }
+    }
+
+    &.st_4 {
+      position: absolute;
+
+      &.right {
+        top: 0;
+        right: -60px;
+        width: calc(484px / 2);
+        height: calc(476px / 2);
+        background: url('../img/banner_3/img_leaves2.png') no-repeat 0 0 /
+          contain;
+      }
+
+      &.left {
+        top: 210px;
+        left: -60px;
+        width: calc(280px / 2);
+        height: 190px;
+        background: url('../img/banner_3/img_leaves_3.png') no-repeat 0
+          0 / contain;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .fairy {
+    position: absolute;
+    width: calc(177px / 2);
+    height: 149px;
+    animation-duration: 8s;
+
+    &.st_0 {
+      top: 70px;
+      left: calc(50% - 110px);
+
+      img {
+        width: 100%;
+        transform: scale(-0.4, 0.4);
+        transform-origin: left;
+      }
+    }
+
+    &.st_1 {
+      top: 50px;
+      right: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .bushes {
+    $width: 524px / 2;
+    position: absolute;
+    top: 288px;
+    width: calc(#{$width});
+    height: 112px;
+    background: url('../img/banner_3/img_bush.png') no-repeat 0 0 / contain;
+
+    &.left-1 {
+      left: calc(50% - 2 * #{$width} - 40px);
+      transform: scaleX(-1);
+    }
+
+    &.left-2 {
+      left: calc(50% - #{$width} - 41px);
+    }
+
+    &.right-1 {
+      right: calc(50% - #{$width} - 20px);
+      transform: scaleX(-1);
+    }
+
+    &.right-2 {
+      right: calc(50% - 2 * #{$width} - 19px);
+    }
+  }
+}
+
+@include media_mob {
+  .container_banner_3 {
+    .trees.left {
+      left: calc(50% - 332px - 50px);
+    }
+
+    .leaves {
+      &.st_0.left {
+        left: -140px;
+      }
+
+      &.st_0.right {
+        right: -140px;
+      }
+
+      &.st_1.left {
+        right: -40px;
+      }
+
+      &.st_1.right {
+        right: -40px;
+      }
+
+      &.st_4.right {
+        right: -150px;
+      }
+    }
+
+    .st_1.fairy {
+      right: -30px;
+    }
+
+    &.state_3 {
+      .st_3__title {
+        top: 100px;
+      }
+
+      .trees.left {
+        left: calc(50% - 300.5px - 50px);
+      }
+
+      .trees.right {
+        right: calc(50% - 260.5px - 120px);
+      }
+    }
+  }
+}

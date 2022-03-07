@@ -1,0 +1,309 @@
+.container_banner_2 {
+  .st_0,
+  .st_1,
+  .st_2,
+  .st_3 {
+    display: none;
+  }
+
+  .st_0_2 {
+    opacity: 0;
+  }
+
+  .st_0_1,
+  .st_0_2 {
+    transition: opacity 1s;
+  }
+
+  &.state_0,
+  &.state_1 {
+    background: linear-gradient(#0eb9f9 0%, #38d0ae 100%);
+
+    .st_0 {
+      display: block;
+    }
+
+    .SSI {
+      color: #e6e6e6;
+    }
+  }
+
+  &.state_1 {
+    .st_0_2 {
+      opacity: 1;
+    }
+
+    .st_0_1 {
+      opacity: 0;
+    }
+  }
+
+  &.state_2 {
+    background: linear-gradient(#0eb9f9 0%, #38d0ae 100%);
+
+    .st_2 {
+      display: block;
+    }
+
+    .SSI {
+      color: #e6e6e6;
+    }
+  }
+
+  &.state_3 {
+    background: #ffffff;
+
+    .st_3 {
+      display: block;
+    }
+
+    .SSI {
+      color: #545454;
+    }
+
+    &.pink {
+      border: 1px solid $pink;
+
+      .st_3__title {
+        color: $pink;
+      }
+
+      .st_3__btn:hover {
+        background: $pink;
+      }
+    }
+
+    &.green {
+      border: 1px solid $green;
+
+      .st_3__title {
+        color: $green;
+      }
+
+      .st_3__btn:hover {
+        background: $green;
+      }
+    }
+
+    &.blue {
+      border: 1px solid $blue;
+
+      .st_3__title {
+        color: $blue;
+      }
+
+      .st_3__btn:hover {
+        background: $blue;
+      }
+    }
+  }
+
+  .st_0 {
+    &__title {
+      position: relative;
+      top: 25px;
+      margin: 0 auto;
+      color: #ffffff;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__window {
+      position: relative;
+      top: 45px;
+      width: 213px;
+      height: 140px;
+      margin: 0 auto;
+      background: url('../img/banner_2/window.svg') no-repeat 0 0 / contain;
+    }
+
+    &__search {
+      position: relative;
+      top: 15px;
+      left: -10px;
+      width: calc(463px / 2);
+      height: calc(176px / 2);
+      margin: 0 auto;
+      background: url('../img/banner_2/search.svg') no-repeat 0 0 / contain;
+    }
+
+    &__girl {
+      position: absolute;
+      right: 4px;
+      width: calc(413px / 2);
+      margin: 0 auto;
+
+      &.st_0_1 {
+        top: 17px;
+        height: calc(415px / 2);
+        background: url('../img/banner_2/woman_st_0.png') no-repeat 0 0 /
+          contain;
+      }
+
+      &.st_0_2 {
+        top: 16px;
+        height: calc(257px / 2);
+        background: url('../img/banner_2/woman_st_1.png') no-repeat 0 0 /
+          contain;
+      }
+    }
+
+    &__clock {
+      position: absolute;
+      top: 17px;
+      left: 0;
+      width: calc(143px / 2);
+      height: calc(143px / 2);
+      margin: 0 auto;
+
+      #clock_hours {
+        animation: clock_hours 3.8s linear both 1s;
+      }
+
+      #clock_minutes {
+        animation: clock_minutes 3.8s linear both 1s;
+        transform-origin: 56.01px 53.2px;
+      }
+    }
+  }
+
+  .st_2 {
+    &__title {
+      position: relative;
+      top: 28px;
+      margin: 0 auto;
+      color: #ffffff;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__subtitle {
+      position: relative;
+      top: 38px;
+      margin: 0 auto;
+      color: #ffffff;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &__btns {
+      position: relative;
+      top: 55px;
+      display: flex;
+      height: 210px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__btn {
+      width: 216px;
+      height: 60px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &.green {
+        background: url('../img/banner_2/btn_green.png') no-repeat 0 0 / contain;
+
+        &:hover {
+          box-shadow: 0 0 12px 2px $green;
+        }
+      }
+
+      &.pink {
+        background: url('../img/banner_2/btn_pink.png') no-repeat 0 0 / contain;
+
+        &:hover {
+          box-shadow: 0 0 12px 2px $pink;
+        }
+      }
+
+      &.blue {
+        background: url('../img/banner_2/btn_blue.png') no-repeat 0 0 / contain;
+
+        &:hover {
+          box-shadow: 0 0 12px 2px $blue;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .st_3 {
+    height: 100%;
+
+    &__title {
+      position: relative;
+      top: 84px;
+      margin: 0 auto;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__subtitle {
+      position: relative;
+      top: 94px;
+      margin: 0 auto;
+      color: #2f2e6b;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 243px;
+      left: calc(50% - 90px);
+      display: flex;
+      width: 180px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background: #2f2e6b;
+      border-radius: 6px;
+      box-shadow: 1px 1px 7px 0 #000000;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: 'Trebuchet MS', serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-align: center;
+      transition: background 0.3s;
+    }
+  }
+}
+
+@include media_mob {
+  .container_banner_2 {
+    min-width: 300px;
+
+    .wrapper {
+      width: 300px;
+    }
+
+    .circle-3 {
+      display: none;
+    }
+  }
+}

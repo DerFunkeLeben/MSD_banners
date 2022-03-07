@@ -1,0 +1,192 @@
+.f {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.dogJump {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: dogJump;
+}
+
+.pulse {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+}
+
+.levitation {
+  animation: levitate 3s linear infinite;
+}
+
+.gliding {
+  animation: glide 3s linear infinite;
+}
+
+$duration: 5;
+
+.t_fade {
+  animation: title_fade #{$duration}s both;
+}
+
+.t_fade_half {
+  animation: title_fade_last #{$duration / 2}s both;
+}
+
+.dur60 {
+  animation-duration: 60s;
+}
+
+.dur07 {
+  animation-duration: 0.7s;
+}
+
+.del1 {
+  animation-delay: 1s;
+}
+
+.del2 {
+  animation-delay: 2s;
+}
+
+.del6 {
+  animation-delay: 6s;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(10px, 10px);
+  }
+
+  50% {
+    transform: translate(0, 20px);
+  }
+
+  75% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+@keyframes glide {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(100px);
+  }
+
+  75% {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dogJump {
+  0% {
+    transform: translateY(100px);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes clock_hours {
+  to {
+    transform: matrix(0.821, 0.571, -0.571, 0.821, 55.519, 52.195)
+      rotate(90deg);
+  }
+}
+
+@keyframes clock_minutes {
+  to {
+    transform: rotate(1080deg);
+  }
+}
+
+@keyframes title_fade {
+  0% {
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    transform: translateY(100px);
+  }
+
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+
+  100% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+}
+
+@keyframes title_fade_last {
+  0% {
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    transform: translateY(0);
+  }
+
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+
+  40%,
+  100% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+}

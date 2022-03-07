@@ -1,0 +1,69 @@
+extends ../layout
+block head
+
+block vars
+  - var href = '%clickurl_1%'
+
+block content
+  .container.container_banner_3
+
+    .background-container
+      each _ in Array(5)
+        .wrap
+    
+    .wrapper 
+      include details/details  
+
+      .st_0
+        .st_0__couple
+        .st_0__title.t_fade_half
+          |а вы сможете 
+          br
+          |отгадать
+          br
+          |загадку?
+      
+      .st_1
+        .st_1__title.t_fade
+          span
+            |около<br>
+          span
+            |80%<br>
+          span 
+            |людей, живущих<br>
+            |половой жизнью,<br>
+            |встречаются <br>
+            |с ним...
+      
+      .st_2
+        .st_2__couple
+        .st_2__title.t_fade
+          span
+            |он может<br>
+          span
+            |себя никак
+            |не&nbsp;проявлять
+        
+      .st_3
+        .st_3__title.t_fade 
+          span
+            |он может<br>
+          span
+            |стать причиной 
+            |серьезных<br> 
+            |заболеваний
+      
+      .st_4
+        .st_4__title.t_fade_half
+          |от него можно
+          br
+          |защититься
+
+      a(href=href target='_blank').banner-3__clickable
+        .btn_more.pulse
+          |Хочу узнать ответ
+
+      include ../common/SSI/SSI
+
+block scripts
+  script(src='js/banner_3.js')

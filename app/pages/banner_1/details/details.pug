@@ -1,0 +1,32 @@
+- var virusBlue = './img/banner_1/virus_blue.png'
+- var virusPink = './img/banner_1/virus_pink.png'
+- var heart = './img/banner_1/heart_detail.png'
+- var cloud = './img/banner_1/cloud_1.png'
+- var bird_1 = './img/banner_1/bird_1.png'
+- var bird_2 = './img/banner_1/bird_2.png'
+
+each _,i in Array(4)
+    .cloud.gliding(class=`cloud-${i+1}`)
+        img(src=cloud)
+
+.virus.virus__blue.virus-1.levitation(data-virus='true')
+    img(src=virusBlue)
+.virus.virus__blue.virus-2.levitation.del1(data-virus='true')
+    img(src=virusBlue)
+.virus.virus__pink.virus-3.levitation.del2(data-virus='true')
+    img(src=virusPink)
+.virus.virus__pink.virus-4.levitation(data-virus='true')
+    img(src=virusPink)
+.st_2.virus.virus__blue.virus-5.levitation(data-virus='true')
+    img(src=virusBlue).f
+.st_2.virus.virus__pink.virus-6.levitation(data-virus='true')
+    img(src=virusPink).f
+
+each _,i in Array(3)
+    .heart(class=`heart-${i+1}`)
+        img(src=heart)
+
+.st_3.bird.bird-1
+    img(src=bird_1)
+.st_3.bird.bird-2
+    img(src=bird_2)
